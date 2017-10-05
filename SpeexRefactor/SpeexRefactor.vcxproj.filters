@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="External">
+      <UniqueIdentifier>{58930aef-402b-4181-9062-f0f963ac2e1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\Encoder">
+      <UniqueIdentifier>{6b1698ef-4356-4ae7-9ce0-411aa064e512}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\Decoder">
+      <UniqueIdentifier>{020c299c-6c5a-4b99-b747-2e41c9730092}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Include\Encoder">
+      <UniqueIdentifier>{4f977f5a-76a7-44d4-818e-7dc4c75c09dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Decoder">
+      <UniqueIdentifier>{f83650d1-7cb8-4cf8-b485-430378a9f6cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Encoder">
+      <UniqueIdentifier>{8a4a13d3-a094-4b92-a611-c8518b012135}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Decoder">
+      <UniqueIdentifier>{b46efeaf-7a6e-4136-9bf2-efd4932cdeff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\Common">
+      <UniqueIdentifier>{5c33f4ea-ca66-488c-bde3-fb9c963fbd01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Common">
+      <UniqueIdentifier>{40a0bbaa-f9b7-46e0-ba51-684b8157278f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Common">
+      <UniqueIdentifier>{1d21262f-53d9-47ec-887c-38c8250429e5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\SpeexRefactorAPI.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Encoder\SpeexNarrowBandEncoder.cpp">
+      <Filter>Src\Encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Encoder\SpeexWideBandEncoder.cpp">
+      <Filter>Src\Encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Encoder\SpeexUltraWideBandEncoder.cpp">
+      <Filter>Src\Encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Common\SpeexBitStream.cpp">
+      <Filter>Src\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Common\SpeexHeader.cpp">
+      <Filter>Src\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Common\SpeexCommonUtilities.cpp">
+      <Filter>Src\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Common\WavFileParser.cpp">
+      <Filter>Src\Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\Encoder\SpeexNarrowBandEncoder.h">
+      <Filter>Include\Encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Encoder\SpeexWideBandEncoder.h">
+      <Filter>Include\Encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Encoder\SpeexUltraWideBandEncoder.h">
+      <Filter>Include\Encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="External\Encoder\ISpeexEncoder.h">
+      <Filter>External\Encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Encoder\SpeexEncoder.h">
+      <Filter>Include\Encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="External\Common\Definitions.h">
+      <Filter>External\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="External\Common\IResource.h">
+      <Filter>External\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="External\Common\ISpeexBitStream.h">
+      <Filter>External\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="External\Common\SpeexEnums.h">
+      <Filter>External\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="External\SpeexRefactorAPI.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Common\Errors.h">
+      <Filter>Include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Common\SpeexBitStream.h">
+      <Filter>Include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Common\SpeexHeader.h">
+      <Filter>Include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Common\SpeexCommonUtilities.h">
+      <Filter>Include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Common\WavFileParser.h">
+      <Filter>Include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="External\Common\IFileParser.h">
+      <Filter>External\Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SpeexRefactor.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
