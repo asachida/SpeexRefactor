@@ -2,14 +2,15 @@
 
 ## Plan for rewrite using C++11
 * Identify Objects: The following can be considered as independent objects:
-  - Encoder
+  - Encoder (Narrow band, Wide band and Ultra wide band encoders)
   - Decoder
   - Bit Stream Data
   - File Parser 
   - Speex Header
+  - Speex Stereo Encoder
   
 * The following can be simplified/ modified using C++
-  - We can combine data and functions into C++ classes. Ex: **SpeexBits**, **SpeexHeader**.
+  - We can combine data and functions into C++ classes. Ex: **SpeexBits**, **SpeexHeader**, **SpeexStereo**, **VBR state**.
   - Wherever possible, rather than allocating and freeing memory, we could use new and delete. 
   - Better yet, is to use the C++11 smart pointers internally for dynamic memory allocation, such as **std::shared_ptr** and **std::unique_ptr**, which does a pretty good job of deleting heap objects that go out of scope.
   - Wherever possible, rather than using preprocessor directive (#define), we could use Enums. Ex: **EncoderModeTypes { ENC_MODE_NARROW_BAND, ENC_MODE_WIDE_BAND, ENC_MODE_ULTRA_WIDE_BAND}**
